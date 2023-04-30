@@ -17,3 +17,4 @@ MIT
 ## Credits
 William Tikhonenko
 https://github.com/coding-boot-camp/friendly-parakeet for the starter code
+https://willzealot.github.io/Password-Gen/
