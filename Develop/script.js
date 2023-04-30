@@ -64,3 +64,10 @@ function writePassword(){
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+window.addEventListener("load", function load( e ){ 
+  // Remove the load event 
+  window.removeEventListener( "load", load, false );
+  // Set the body opacity to 1
+  document.body.style.opacity = 1;
+
+})
