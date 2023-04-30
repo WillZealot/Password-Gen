@@ -15,7 +15,7 @@ let generateBtn = document.querySelector("#generate");
 //Section 2 creating the password function begins!
 function writePassword(){
   let password = "";
-  let passNum = prompt("Hello Awesome Human! How Long Would you like your password?");{
+  let passNum = prompt("Hello Awesome Human! How Many Characters Would you like your password?");{
   //right here i created a if statement that determines if my pass length is not less than 8. if it is the page will stop all prompts and restart the process with a swaggy little alert
   if (passNum < 8) {
     alert("Oops silly me ! I forgot to mention it must be a value more than or equal to 8 :) Hit the generate password again to try again!");
@@ -64,10 +64,4 @@ function writePassword(){
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-window.addEventListener("load", function load( e ){ 
-  // Remove the load event 
-  window.removeEventListener( "load", load, false );
-  // Set the body opacity to 1
-  document.body.style.opacity = 1;
 
-})
