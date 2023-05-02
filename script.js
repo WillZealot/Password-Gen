@@ -25,28 +25,28 @@ function writePassword(){
   }
   }
   //section 3 these are all my prompts that will be collecting input for the password
-  let passSpecial = prompt("Would you like special characters?");
-  let passLower = prompt("Would you like lowercase letters?");
-  let passUpper = prompt("Would you like uppercase letters?");
-  let passNumeric = prompt("Would you like numbers?");
+  let passSpecial = confirm("Would you like special characters?");
+  let passLower = confirm("Would you like lowercase letters?");
+  let passUpper = confirm("Would you like uppercase letters?");
+  let passNumeric = confirm("Would you like numbers?");
 //section 4 my sick while loop
   // this converts the string in passNum to a integer amazing wowwie
   let passwordLength = parseInt(passNum);
   // this while look checks if my passwords length is what th euser inputed or just more than 8 and it continues to execute until the passwords length is how much was entered
   while (password.length < passwordLength) {
-    if (passUpper === "yes") {
+    if (passUpper === true) {
       password += uppers[Math.floor(Math.random() * uppers.length)];
     }
   
-    if (passLower === "yes") {
+    if (passLower === true) {
       password += lowers[Math.floor(Math.random() * lowers.length)];
     }
   
-    if (passSpecial === "yes") {
+    if (passSpecial === true) {
       password += specials[Math.floor(Math.random() * specials.length)];
     }
   
-    if (passNumeric === "yes") {
+    if (passNumeric === true) {
       password += numerics[Math.floor(Math.random() * numerics.length)];
     }
   }
